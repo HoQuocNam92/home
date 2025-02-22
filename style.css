@@ -15,8 +15,8 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 70vh;
-
+    height: 80vh;
+    position: relative;
 }
 
 
@@ -24,18 +24,14 @@ html {
     max-width: 1240px;
     width: 100%;
     margin: 0 auto;
-}
-
-.logo {
-    display: inline-block;
-
-}
-
-.logo a {
-    display: block;
-    height: 87px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.logo-link {
+    display: inline-block;
+    height: 100%;
 }
 
 .logo-image {
@@ -44,43 +40,39 @@ html {
 }
 
 .menu {
-    float: right;
     display: flex;
     align-items: center;
-    line-height: 87px;
+
 
 }
 
 .list-menu {
     list-style: none;
-    height: 100%;
+
 }
 
-.item {
+.list-menu li {
     display: inline-block;
 }
 
 .link-menu {
     display: inline-block;
-    padding: 0 16px;
+    padding: 16px 16px;
     text-decoration: none;
     color: #000;
+    display: flex;
+    align-items: center;
 }
 
-.menu-phone {
-    padding: 15px 25px;
-    border: 1px solid #000;
-    text-decoration: none;
-    color: #000;
-}
+
 
 .hero-section {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #000;
-    padding-top: 100px;
 }
 
 .section-title {
@@ -91,11 +83,11 @@ html {
 .section-sub-title {
     font-size: 117px;
     font-weight: 400;
-    line-height: 100px;
+    line-height: 120px;
 }
 
 .section-description {
-    margin-top: 28px;
+
     line-height: 28px;
 }
 
@@ -144,7 +136,7 @@ html {
 
 .list-item {
     display: flex;
-    margin: 30px -15px;
+
 }
 
 .item {
@@ -215,10 +207,10 @@ html {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .about-content {
-    padding: 10px 150px 10px 25px;
     font-family: 'Forum', serif;
 }
 
@@ -244,9 +236,13 @@ html {
 }
 
 .about-image {
-    padding: 16px 32px;
-    max-width: 470px;
+    padding: 16px;
+}
+
+.avatar-image {
     width: 100%;
+    max-width: 470px;
+    display: block;
 }
 
 
